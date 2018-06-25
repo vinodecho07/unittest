@@ -45,7 +45,7 @@
   </target>
 
   <target name="build" depends="test">
-    <mkdir dir="target">
+    <mkdir dir="target"/>
     <jar destfile="target/addition.jar"
          basedir="${main.build.dir}">
     </jar>
