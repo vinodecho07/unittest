@@ -44,6 +44,11 @@
     </junitreport>
   </target>
 
+  <target name="build" depends="test">
+    <jar destfile="${main.build.dir}/addition.jar"
+         basedir="${main.build.dir}">
+  </target>
+
   <target name="clean">
 	<delete dir="build"/>
   </target>
