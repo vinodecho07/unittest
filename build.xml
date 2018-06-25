@@ -47,6 +47,7 @@
   <target name="build" depends="test">
     <jar destfile="${main.build.dir}/addition.jar"
          basedir="${main.build.dir}">
+    </jar>
   </target>
 
   <target name="clean">
