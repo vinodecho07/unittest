@@ -2,18 +2,18 @@ pipeline {
   agent any
 
   stages {
-    stage {
-      steps ('Test') {
+    stage('Test') {
+      steps {
 	sh 'ant test'
       }
     }
-    stage {
-      steps ('Build') {
+    stage('Build') {
+      steps {
         sh 'ant build'
       }
     }
-    stage {
-      steps ('Deploy') {
+    stage('Deploy') {
+      step {
         sh 'cp dist/*.war /tmp'
       }
     }
