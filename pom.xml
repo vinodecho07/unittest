@@ -7,4 +7,12 @@
 <version>1.0.0</version>
 <name>helloworld</name>
 
+<dependencies>
+	<dependency>
+		<groupId>jar</groupId>
+		<artifactId>jar</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+</dependencies>
+
 </project>
